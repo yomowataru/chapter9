@@ -1,0 +1,96 @@
+/*リセットCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+}
+
+header,span {
+  background-color: #FF9A4B;
+}
+
+.main-item {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+}
+
+section {
+  background-color: #EEEEEE;
+  width: 300px;
+  padding: 10px;
+  margin-right: 30px;
+  position: relative;
+}
+
+section:last-child {
+  margin-right: 0;
+}
+
+span {
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image {
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.flow01 {
+  background-image: url(img/flow01.png);
+}
+
+.flow02 {
+  background-image: url(img/flow02.png);
+}
+
+.flow03 {
+  background-image: url(img/flow03.png);
+}
+
+h3 {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #AAAAAA;
+  width: 100%;
+  height: 50px;
+}
+
+@media screen and (max-width:768px) {
+  .main-item {
+    width: 100%;
+    display: block;
+    margin: 50px auto;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  section:nth-child(1) {
+    margin: 0 auto;
+  }
+
+  section:nth-child(2) {
+    margin: 20px auto;
+  }
+
+  section:last-child {
+    margin: 0 auto;
+  }
+
+
+}
